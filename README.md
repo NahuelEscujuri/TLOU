@@ -1,4 +1,6 @@
-# TLOU
+<img  src="https://raw.githubusercontent.com/NahuelEscujuri/TLOU/refs/heads/main/Assets/README/banner.PNG">
+
+# TLOU II
 
 ## Descripción General
 
@@ -20,43 +22,9 @@
 
 ---
 
-## Estructura y Funciones de AI
-
-La carpeta `Assets/Entities/_Scripts/AI` organiza los sistemas principales de inteligencia artificial del proyecto. Sus componentes y responsabilidades son:
-
-- **Aim/**
-  - Gestiona el sistema de puntería de los enemigos, permitiendo que apunten y disparen con precisión al jugador u otros objetivos.
-  - Ejemplo: `EnemyAimSystem.cs` controla la lógica de apuntado.
-
-- **AlarmSystem/**
-  - Implementa un sistema de alarmas para la comunicación entre enemigos.
-  - `AlarmEmiter.cs`: Permite a un enemigo emitir una alarma que notifica a otros en un radio determinado.
-  - `AlarmReceiver.cs`: Recibe y gestiona las alarmas, activando comportamientos de alerta en los enemigos.
-  - `AlarmData.cs`: Define la información que se transmite con cada alarma.
-
-- **Art/**
-  - Contiene recursos gráficos (imágenes) que representan visualmente los distintos estados de la IA (por ejemplo, patrullando, buscando, combate, etc.).
-
-- **Cover/**
-  - Gestiona la lógica de coberturas en el entorno.
-  - `CoversHandler.cs`: Organiza y proporciona puntos de cobertura para que los enemigos puedan protegerse estratégicamente durante el combate.
-
-- **Detection/**
-  - Encargada de la lógica de detección de objetivos, como el jugador, mediante visión, audición u otros sensores.
-
-- **Faction/**
-  - Permite organizar entidades en distintas facciones o equipos, facilitando la lógica de aliados y enemigos.
-
-- **PushDownAutomata/**
-  - Implementa el núcleo del sistema de estados de la IA usando un autómata de pila (Push Down Automata).
-  - Permite a los enemigos cambiar de comportamiento (patrulla, persecución, combate, etc.) de forma flexible y jerárquica.
-
-- **IAMovementController.cs**
-  - Controla el movimiento general de los agentes de IA, integrando navegación, persecución y patrullaje.
-
----
-
 ## Controles del Jugador
+
+<img  src="https://raw.githubusercontent.com/NahuelEscujuri/TLOU/refs/heads/main/Assets/README/player.png">
 
 El jugador utiliza los siguientes controles para moverse e interactuar:
 
@@ -106,6 +74,44 @@ La carpeta `Assets/Entities/Player/Scripts` contiene los sistemas principales qu
   - **HeartRateController.cs**: Controla el ritmo cardíaco del jugador, afectando sonidos.
   - **MovementHeartRateMediator.cs**: Sincroniza el ritmo cardíaco con el movimiento del jugador.
   - **HeartRateStates/**: Define los distintos estados de ritmo cardíaco y sus sonidos asociados.
+
+---
+
+## Estructura y Funciones de AI
+
+<img  src="https://raw.githubusercontent.com/NahuelEscujuri/TLOU/refs/heads/main/Assets/README/enemy.png">
+
+La carpeta `Assets/Entities/_Scripts/AI` organiza los sistemas principales de inteligencia artificial del proyecto. Sus componentes y responsabilidades son:
+
+- **Aim/**
+  - Gestiona el sistema de puntería de los enemigos, permitiendo que apunten y disparen con precisión al jugador u otros objetivos.
+  - Ejemplo: `EnemyAimSystem.cs` controla la lógica de apuntado.
+
+- **AlarmSystem/**
+  - Implementa un sistema de alarmas para la comunicación entre enemigos.
+  - `AlarmEmiter.cs`: Permite a un enemigo emitir una alarma que notifica a otros en un radio determinado.
+  - `AlarmReceiver.cs`: Recibe y gestiona las alarmas, activando comportamientos de alerta en los enemigos.
+  - `AlarmData.cs`: Define la información que se transmite con cada alarma.
+
+- **Art/**
+  - Contiene recursos gráficos (imágenes) que representan visualmente los distintos estados de la IA (por ejemplo, patrullando, buscando, combate, etc.).
+
+- **Cover/**
+  - Gestiona la lógica de coberturas en el entorno.
+  - `CoversHandler.cs`: Organiza y proporciona puntos de cobertura para que los enemigos puedan protegerse estratégicamente durante el combate.
+
+- **Detection/**
+  - Encargada de la lógica de detección de objetivos, como el jugador, mediante visión, audición u otros sensores.
+
+- **Faction/**
+  - Permite organizar entidades en distintas facciones o equipos, facilitando la lógica de aliados y enemigos.
+
+- **PushDownAutomata/**
+  - Implementa el núcleo del sistema de estados de la IA usando un autómata de pila (Push Down Automata).
+  - Permite a los enemigos cambiar de comportamiento (patrulla, persecución, combate, etc.) de forma flexible y jerárquica.
+
+- **IAMovementController.cs**
+  - Controla el movimiento general de los agentes de IA, integrando navegación, persecución y patrullaje.
 
 ---
 
